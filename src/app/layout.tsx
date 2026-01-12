@@ -36,7 +36,7 @@ export default function RootLayout({
       >
         <div className="min-h-screen">
           <NavBar />
-          <main className="mx-auto max-w-6xl px-4 py-10">{children}</main>
+          <main className="mx-auto max-w-6xl px-4 py-6 sm:py-10">{children}</main>
           <footer className="border-t border-border/80">
             <div className="mx-auto max-w-6xl px-4 py-8 text-sm text-muted">
               © {new Date().getFullYear()} Equivvo
