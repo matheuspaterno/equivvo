@@ -5,7 +5,12 @@ import ListingSection from "@/components/ListingSection";
 export default function Home() {
   return (
     <div className="-mt-6 sm:-mt-10">
-      <section className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
+      <section className="
+  flex flex-col items-center justify-center text-center px-4
+  min-h-[55vh] sm:min-h-[60vh] md:min-h-screen
+  mt-[60px] sm:mt-[80px] md:mt-[10px]
+  mb-4 sm:mb-8
+">
         <div className="mx-auto max-w-2xl space-y-6">
           <div className="mx-auto flex items-center justify-center">
             <div className="relative h-[clamp(154px,19.6vw,364px)] w-[clamp(308px,67.2vw,1260px)]">
