@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  /* Equivvo palette */
+  --eq-bg: #f6efe3; /* light beige */
+  --eq-surface: #fbf7f0; /* elevated surface */
+  --eq-text: #2f2118; /* deep brown */
+  --eq-muted: #6b564a; /* muted brown */
+  --eq-accent: #c77c51; /* warm terracotta */
+  --eq-border: rgba(47, 33, 24, 0.12);
+  --eq-shadow: rgba(47, 33, 24, 0.08);
+}
+
+@theme inline {
+  --color-background: var(--eq-bg);
+  --color-surface: var(--eq-surface);
+  --color-foreground: var(--eq-text);
+  --color-muted: var(--eq-muted);
+  --color-accent: var(--eq-accent);
+  --color-border: var(--eq-border);
+
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--eq-bg);
+  color: var(--eq-text);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+    Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif), ui-serif, Georgia, Cambria,
+      "Times New Roman", Times, serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  p,
+  li,
+  span,
+  a {
+    font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system,
+      Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+      "Segoe UI Emoji";
+    font-weight: 400;
+  }
+
+  a {
+    text-underline-offset: 3px;
+  }
+}
+
+::selection {
+  background: rgba(199, 124, 81, 0.25);
+}
+
+/* subtle sitewide rhythm */
+main {
+  padding-bottom: 2rem;
+}
