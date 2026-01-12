@@ -1,28 +1,19 @@
-import Image from "next/image";
-
 import ListingSection from "@/components/ListingSection";
+import HeroLogo from "@/components/HeroLogo";
 
 export default function Home() {
   return (
     <div className="-mt-6 sm:-mt-10">
-      <section className="
-  flex flex-col items-center justify-center text-center px-4
-  min-h-[55vh] sm:min-h-[60vh] md:min-h-screen
-  mt-[60px] sm:mt-[80px] md:mt-[10px]
-  mb-4 sm:mb-8
-">
+      <section className="flex min-h-[calc(100svh-84px)] flex-col items-center justify-center px-4 pt-4 text-center sm:min-h-[calc(100svh-96px)] sm:pt-6">
         <div className="mx-auto max-w-2xl space-y-6">
           <div className="mx-auto flex items-center justify-center">
-            <div className="relative h-[clamp(154px,19.6vw,364px)] w-[clamp(308px,67.2vw,1260px)]">
-              <Image
-                src="/equivvologoplusname.png"
-                alt="Equivvo"
-                fill
-                priority
-                className="object-contain"
-                sizes="(max-width: 640px) 67vw, (max-width: 1024px) 67vw, 1260px"
-              />
-            </div>
+            <HeroLogo
+              src="/equivvologoplusname.png"
+              alt="Equivvo"
+              className="relative mx-auto h-[clamp(154px,19.6vw,364px)] w-full max-w-[1260px]"
+              sizes="(max-width: 640px) 92vw, (max-width: 1024px) 80vw, 1260px"
+              fadeRangePx={260}
+            />
           </div>
 
           <div className="space-y-3">
